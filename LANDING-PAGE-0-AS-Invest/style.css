@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+* {
+    margin: 0;/*Distância em pixels */
+    padding: 0;/*Distância em pixels*/
+    box-sizing: border-box;
+    text-decoration: none;/*Retira qualquer cor que o texto original tenha*/
+}
+
+body {
+    font-size:100%;
+    background:linear-gradient(90deg, #ffffff 50.0%, #ffffff 85.61%);
+}
+
+.cabeçalho{
+    background-color: rgb(25, 65, 177);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 10px; 
+    font-weight:900;
+    font-size:medium;
+}
+
+.logo3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(25, 65, 177);
+    margin-left: 300px; 
+}
+
+.cabeçalho-menu{
+    margin: 3px;
+    display: flex;
+    gap:30px;
+        
+}
+
+.cabeçalho-menu-link{
+    font-family: 'Sarala',sans-serif;
+    size: 15px;
+}
+
+.principal{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: beige;
+    font-family: 'Gill Sans',sans-serif;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+}
+
+.principal-p1-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.principal-p2-descrição{
+    display:flex;
+    text-align: center;
+}
+
+.rodapé{ background-color: rgb(25, 65, 177);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 10px; 
+    font-weight:900;
+    font-size:medium;
+    gap:30px;
+}
+
+

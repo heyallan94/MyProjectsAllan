@@ -1,0 +1,277 @@
+body{
+    background-color: rgb(213, 213, 233);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background: url("009Fundo1.jpg");
+    background-position: center;
+    color: white;
+    background-size: cover;
+    background-color: white;
+    display: flex;
+    height: 5em;    
+    justify-content: space-between;
+    padding: 2em;
+    text-align: center;
+    align-items: center;
+}
+
+#logo{
+    background: url("010logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10em;
+    height: 10em;
+    border-radius: 2em;
+}
+#logo:hover{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#wallet{
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+#wallet:hover{
+    box-shadow: 0px 0px 5px 3px;
+}
+
+/*Main*/
+
+main{
+    padding: 2em;
+    
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Products*/
+#product-1 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-1 a{
+    margin-bottom: 1em;
+}
+
+#product-1:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+#product-2 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-2 a{
+    margin-bottom: 1em;
+}
+
+#product-2:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+#product-3 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-3 a{
+    margin-bottom: 1em;
+}
+
+#product-3:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+#product-4 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-4 a{
+    margin-bottom: 1em;
+}
+
+#product-4:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+
+#section2{
+    margin-top: 2em;
+}
+
+#product-5 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-5 a{
+    margin-bottom: 1em;
+}
+
+#product-5:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+#product-6 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-6{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-6 a{
+    margin-bottom: 1em;
+}
+
+#product-6:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+#product-7 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-7{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-7 a{
+    margin-bottom: 1em;
+}
+
+#product-7:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+#product-8 img{
+    width: 10em;
+    padding: 1em;
+}
+
+#product-8{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#product-8 a{
+    margin-bottom: 1em;
+}
+
+#product-8:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+/*======================================*/
+/*Cart*/
+
+#cart{
+    flex-direction: column;
+}
+
+#div1cart{
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 1.5em;
+    align-items: center;
+}
+
+#div2cart{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+#res{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    background-color: blue;
+    color: white;
+}
+

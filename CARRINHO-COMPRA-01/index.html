@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+        <div id="wallet">Seu saldo <br>atual é de <br><strong>R$ 3.575,21</strong></div>
+    </header>
+
+    <main>
+        <section>
+            <div id="product-1" onclick="carrinho(299,'Tela-LG-14')">
+                <img src="img/001telaLG.jpg" alt="Tela Lg">
+                <a href="">Tela LG 14"<br>R$299,00</a>
+            </div>
+            <div id="product-2" onclick="carrinho(7100,'MacBook-17')">
+                <img src="img/002notebook.jpg" alt="Notebook">
+                <a href="">MacBook 17"<br>R$7.100,00</a>
+            </div>
+            <div id="product-3" onclick="carrinho(1399,'3-Ram-12gb')">
+                <img src="img/003memoria3.jpg" alt="Kit mémoria ram">
+                <a href="">KIT RAM DDR5 12GB<br> R$1.399,00</a>
+            </div>
+            <div id="product-4" onclick="carrinho(499,'1-Ram-8gb')">
+                <img src="img/004memoria1.jpg" alt="Uma mémoria ram">
+                <a href="">RAM 8GB<br>R$499,00</a>
+            </div>
+        </section>
+        
+        <section id="section2">
+            <div id="product-5" onclick="carrinho(675,'Gab-TriCooler')">
+                <img src="img/005gabinete3cooler.jpg" alt="Gabinete 3 cooler">
+                <a href="">Gabinete TriCooler <br>R$675,00</a>
+            </div>
+            <div id="product-6" onclick="carrinho(375,'Gab-PCModel')">
+                <img src="img/006gabinetesemcooler.jpg" alt="Gabinete sem cooler">
+                <a href="">Gabinete PCModel<br>R$375,00</a>
+            </div>
+            <div id="product-7" onclick="carrinho(699,'Fonte-real-600w')">
+                <img src="img/007fonte.jpg" alt="Fonte real 600w">
+                <a href="">Fonte REAL 600W<br>R$699,00</a>
+            </div>
+            <div id="product-8" onclick="carrinho(1200,'Fonte-real-1000w')">
+                <img src="img/008font1000w.jpg" alt="Fonte real 1000w">
+                <a href="">Fonte KCAS REAL 1000W<br>R$1.200,00</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <section id="cart">
+        <div id="div1cart">Lista de itens</div>
+        <div id="div2cart">
+            <i class="bi bi-cart4"> Seu carrinho</i>
+            <div id="res">Total do seu carrinho:<p id="saldo">0</p>,00R$</div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>ASTech é uma empresa fictícia</p>
+            <p>Estudo em JS,HTML,CSS</p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+</html>

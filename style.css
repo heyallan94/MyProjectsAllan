@@ -1,0 +1,164 @@
+
+body{
+    background-color: rgb(8, 8, 32);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 2em;
+    opacity: .5; 
+}
+
+header a:hover, p:hover{
+    opacity: 1;
+}
+
+/**/
+
+main{
+display: flex;
+flex-direction: column;
+padding: 2em;
+}
+
+main section{
+display: flex;
+justify-content: space-between;
+padding: 2em;
+align-items: center;
+text-align: center;
+}
+
+main a{
+    color: blue;
+    text-decoration: none;
+    margin-top: 1em;  
+}
+
+main div{
+justify-content: space-between;
+padding: 1em;
+background-color: white;
+width: 30em;
+height: auto;
+color: black;
+opacity: .9;
+border-radius: 1em;
+align-items: center;
+text-align: center;
+}
+
+main div:hover{
+    opacity: 1;
+}
+
+main img{
+height: 20em;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 451px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        font-size:medium;
+        padding: 0;
+        width: 17em;
+    }
+    
+    header{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 22em;
+        
+    }
+
+    header nav a{
+        padding: 1em;
+        display: flex;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        width: 19em;
+        text-align: center;
+    }
+
+    /**/
+    main{
+        padding: 0;
+    }
+
+    main section{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        width: 22em;
+    }
+
+    main section div a{
+       color: yellow;
+       text-decoration: underline;
+
+    }
+
+    main div{
+        background-color:rgb(30, 30, 114);
+        width: 22em;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+
+    main div img{
+        width: 20em;
+        height: 17em;        
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    main div p{
+        color: white;
+        padding: 1em;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 6em;
+        
+    }
+
+}

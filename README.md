@@ -12,7 +12,7 @@ Branch para hospedagem de projetos criados para exercitar :)
         <a href="https://heyallan94.github.io/MyProjectsAllan/LANDING-PAGE-3-EI/index.html">Escola Finaceira</a>
       <p>Amigo meu, pediu para fazer este site como landing page para sua empresa<br>
         (09/07/2022) Ainda não está pronto a landing page!</p>
-        <a href="https://heyallan94.github.io/MyProjectsAllan/CARRINHO-COMPRA-01/index.html">Escola Finaceira</a>
+        <a href="https://heyallan94.github.io/MyProjectsAllan/CARRINHO-COMPRA-01/index.html">Carrinho de Compra</a>
       <p>Carrinho de compras usando a tríade (HTML, JS , CSS) para tentar fazer uma página<br>
         de carrinho de compras. Porém neste caso, ainda não tinha aprendido como fazer request><br>
         com o back, não sabia oque era API, JSON, fetch, GET etc. etc.. Mas esse pequeno<br>

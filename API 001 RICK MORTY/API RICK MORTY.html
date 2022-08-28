@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API </title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(176, 236, 176);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        section{
+            display: flex;
+            gap: 10px;
+
+        }
+        div{
+            background-color: white;
+            width: 300px;
+            border-radius: 10%;
+            height: 450px;
+        }
+
+        #photo{
+            background-color: black;
+        }
+
+        #name{
+            margin-top: 10px;
+        }
+
+        #mudarCard, #mudarCard2{
+            opacity: 0.8;
+        }
+
+        #mudarCard:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        #mudarCard2:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Api usada https://rickandmortyapi.com/api</p>
+
+    <section>    
+        <div id="mudarCard" onclick="mudarCard1()">
+            <p id="card">CLIQUE PARA MUDAR SEU CARD</p>
+            <img id="photo" src="https://rickandmortyapi.com/api/character/avatar/66.jpeg" alt="">
+            <p id="name">NOME</p>
+            <p id="location">LOCAL</p>       
+        </div>
+
+        <div id="mudarCard2" onclick="mudarCard2()">
+            <p id="card2">CLIQUE PARA MUDAR SEU CARD</p>
+            <img id="photo2" src="https://rickandmortyapi.com/api/character/avatar/66.jpeg" alt="">
+            <p id="name2">NOME</p>
+            <p id="location2">LOCAL</p>       
+        </div>
+    </section>
+
+<script>
+
+    let n = 1
+    async function mudarCard1(){
+        const url = `https://rickandmortyapi.com/api/character/` + n
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data)
+        let card = window.document.getElementById('card')
+        let name = window.document.getElementById('name')
+        let location = window.document.getElementById('location')
+        let photo = window.document.getElementById('photo')
+        photo.src = data.image
+        name.innerText = data.name
+        location.innerText = data.location.name
+        n = n + n 
+    }
+
+    async function mudarCard2(){
+        const url = `https://rickandmortyapi.com/api/character/` + n
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data)
+        let card2 = window.document.getElementById('card2')
+        let name2 = window.document.getElementById('name2')
+        let location2 = window.document.getElementById('location2')
+        let photo2 = window.document.getElementById('photo2')
+        photo2.src = data.image
+        name2.innerText = data.name
+        location2.innerText = data.location.name
+        n = n + n 
+    }
+
+    
+
+</script>    
+</body>
+
+</html>

@@ -316,10 +316,7 @@ body{
 /* Mobile */
 @media (max-width: 450px){
     /*Event form*/
-    body {
-        width: 23.5em;
-    }
-    
+   
     #event-description{
         flex-direction: column;
         height: auto;
@@ -339,7 +336,7 @@ body{
     }
 
     #subscription-form{
-        max-width: 15em;
+        /* max-width: 15em; */
         border-radius: 10px;
         margin-bottom: 15px;
     }
@@ -363,7 +360,8 @@ body{
     /*Nossos produtos titulo*/
 
     .products{
-        width: 1px;
+        
+        /* width: 1px; */
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -403,12 +401,12 @@ body{
     }
 
     .details img{
-        width: 22.5em;
+        /* width: 22.5em; */
     }
 
     .detail-description{
         text-align: center;
-        width: 20em;
+        /* width: 20em; */
     }
 
     .detail-description ul li{
@@ -438,7 +436,7 @@ body{
     /*cta*/
     #cta{
         text-align: center;
-        width: 20em;
+        /* width: 20em; */
         border-radius: 10%;
         margin-left: 1.5em;
         margin-bottom: 2em;
@@ -446,7 +444,7 @@ body{
 
     #cta .btn{
         background-color: rgba(0, 255, 64, 0.541);
-        max-width: 10em;
+        /* max-width: 10em; */
         color: white;
 
     }

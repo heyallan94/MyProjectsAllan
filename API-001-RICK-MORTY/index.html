@@ -65,6 +65,20 @@
             <p id="name2">NOME</p>
             <p id="location2">LOCAL</p>       
         </div>
+
+        <div id="mudarCard" onclick="mudarCard3()">
+            <p id="card3">CLIQUE PARA MUDAR SEU CARD</p>
+            <img id="photo3" src="https://rickandmortyapi.com/api/character/avatar/66.jpeg" alt="">
+            <p id="name3">NOME</p>
+            <p id="location3">LOCAL</p>       
+        </div>
+
+        <div id="mudarCard4" onclick="mudarCard4()">
+            <p id="card4">CLIQUE PARA MUDAR SEU CARD</p>
+            <img id="photo4" src="https://rickandmortyapi.com/api/character/avatar/66.jpeg" alt="">
+            <p id="name4">NOME</p>
+            <p id="location4">LOCAL</p>       
+        </div>
     </section>
 
 <script>
@@ -100,6 +114,35 @@
         n = n + n 
     }
 
+    async function mudarCard3(){
+        const url = `https://rickandmortyapi.com/api/character/` + n
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data)
+        let card3 = window.document.getElementById('card3')
+        let name3 = window.document.getElementById('name3')
+        let location3 = window.document.getElementById('location3')
+        let photo3 = window.document.getElementById('photo3')
+        photo3.src = data.image
+        name3.innerText = data.name
+        location3.innerText = data.location.name
+        n = n + n 
+    }
+
+    async function mudarCard4(){
+        const url = `https://rickandmortyapi.com/api/character/` + n
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data)
+        let card4 = window.document.getElementById('card4')
+        let name4 = window.document.getElementById('name4')
+        let location4 = window.document.getElementById('location4')
+        let photo4 = window.document.getElementById('photo4')
+        photo4.src = data.image
+        name4.innerText = data.name
+        location4.innerText = data.location.name
+        n = n + n 
+    }
     
 
 </script>    

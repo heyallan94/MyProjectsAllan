@@ -14,6 +14,7 @@
     <img class="kong" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/Dixie-Kong-Walky.webp">    
     <img class="tnt" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/barrel.png">
     <img class="boom" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/explosion.gif">
+    <audio id="music" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/Music.mp3"></audio>
     
     
 
@@ -24,6 +25,11 @@
     const tnt = window.document.querySelector('.tnt')
     const b2 = window.document.querySelector('.b2')
     const game = window.document.querySelector('.game')
+    function music(){
+      const music = window.document.getElementById('music')
+      music.play()
+    }
+    music()
     
     
     const jump = () =>{

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donkey Kong</title>
+    <link rel="stylesheet" href="/MyProjectsAllan/JOGO-DONKEY KONG-001/css/style.css">
+    <script src="/MyProjectsAllan/JOGO-DONKEY KONG-001/js/script.js"></script>
+</head>
+<body>
+    
+  <div class="game">
+    <img class="kong" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/Dixie-Kong-Walky.webp">    
+    <img class="tnt" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/barrel.png">
+    <img class="boom" src="/MyProjectsAllan/JOGO-DONKEY KONG-001/images/explosion.gif">
+    
+    
+
+  </div>
+
+  <script>
+    const kong = window.document.querySelector('.kong')
+    const tnt = window.document.querySelector('.tnt')
+    const b2 = window.document.querySelector('.b2')
+    const game = window.document.querySelector('.game')
+    
+    
+    const jump = () =>{
+      if(event.key === " " || "click"){/*o event.key precisa saber o nome da tecla para função*/
+        kong.classList.add('jump')
+        setTimeout(()=>{/*setTimeout, para executar algo em determinado tempo, primeiro usa FUNÇÃO, TEMPO*/
+          kong.classList.remove('jump')},
+           805)/*IMPORTANTE, AQUI É 505MS*/
+      }}
+
+    const loop = setInterval(()=>{
+      const tntPosition = tnt.offsetLeft;/*De acordo com a esquerda*/
+      const kongPosition = +window.getComputedStyle(kong).bottom.replace('px','') /*Pegar a propriedade do css de kong, propriedade bottom. Note o método replace('OQUE VOCê QUER REPLACE' , 'OQUE VOCÊ QUER COLOCAR NO LUGAR')*/
+      const gamePosition = game.style.bottom
+
+      if (tntPosition <= 75 && kongPosition <= 38){
+        game.style.animation = 'none'
+        tnt.style.animation = 'none' //style animation recebe IGUAL a nada, significa que vai parar /*tnt.style.left = `${tntPosition}px` //Aqui significa que o style left de tnt, será igual a de tntPosition em pixels /*novamente, igual setTimeout, FUNÇÃO depois em MS o tempo*/
+        kong.src = "/MyProjectsAllan/JOGO-DONKEY KONG-001/images/explosion.gif" /*trocar essa variavel por outra imagem*/
+        kong.style.animation = 'none'/*animação para*/
+        kong.style.width = '400px'/*tamanho vai para*/
+        kong.style.left = '-150px'/*em relação a esquerda, onde vai ficar variável*/
+        kong.style.bottom = '-20px'/*em relação a baixo, onde fica*/
+         
+        setTimeout(()=>{/*Coloquei um settimeou para executar o kong sumindo depois de 1300ms*/
+          kong.style.display = "none"/*kong aqui virou explosão, que some depois de 1300ms*/
+
+           setTimeout(()=>{            
+            alert('Try again champ')
+            window.location.reload()
+            
+           }, 1300)
+        },1300)      
+        
+        clearInterval(loop)/*Parar o loop de acontecer*/
+      }},10)
+
+  const spacePush = window.document.addEventListener('keypress', jump) /*nome do evento , chamada da função ou uma função em si*/
+  const clickPush = window.document.addEventListener('click' , jump)
+
+  </script>
+    
+      
+</body>
+</html>  

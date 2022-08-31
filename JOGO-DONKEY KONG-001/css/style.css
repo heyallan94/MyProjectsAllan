@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.game {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /*Todos os filhos que sairem dessa div, sumirão*/
+    background-image: url(/MyProjectsAllan/A.IMAGENS/bbfull1.jpg);  
+    background-repeat: repeat;
+    background-position-y: bottom;
+    animation: backmove 250s linear;
+}
+
+@keyframes backmove{
+    from{
+        background-position-x: 0px ;
+    }
+    to{
+        background-position-x: -48000px;
+    }
+}
+
+.game{
+    background-image: right 0;
+}
+.b1{
+    bottom: 0;
+    position: absolute;
+}
+
+.tnt {
+    position: absolute;
+    bottom: 0; /*Colocar o item COLADO no bottom*/
+    width: 40px;
+    animation: tnt-animation 1.8s infinite linear;
+    right: -75px; /*essa propriedade leva me consideração a borda da direita, e dá os espaçamento de acordo com o valor aqui*/
+}
+
+
+@keyframes tnt-animation {
+    0%{
+        right: -75px;
+        width: 40px;
+    }
+    20%{
+        width: 40px;
+    }
+    40%{
+        width: 45px;
+    }
+    60%{
+        width: 40px;
+    }
+    80%{
+        width: 45px;
+    }
+    100%{
+        right: 100%;
+        width: 40px;
+    }    
+}
+
+.kong{
+    width: 80px;
+    bottom: 0px;
+    position: absolute;
+    animation: walk .6s infinite ;
+}
+
+.jump{
+   animation: jump 0.9s ease-in-out;
+}
+
+.walk{
+    animation: walk .5s infinite ;
+}
+
+@keyframes walk{
+
+    0% {
+        bottom: 0 ;
+    }
+
+    50%{
+        bottom: -15px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes jump{
+        0% {
+            bottom: 0 ;
+        }    
+        50%{
+            bottom: 100px;
+        }
+
+        100%{
+            bottom: 0;
+        }
+    }
+
+.boom{
+    bottom: -2000px;
+    position: absolute;
+    width: 400px;
+    left: -120px;
+}
+
+
+
+
+
+

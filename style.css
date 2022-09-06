@@ -12,6 +12,13 @@ header{
     align-items: center;
 }
  
+.real-task{
+    background-color: greenyellow;
+}
+
+.hour{
+    font-weight: 900;
+}
 header a{
     text-decoration: none;
     text-transform: none;

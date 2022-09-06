@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/MyProjectsAllan/REAL-TASKS/Cartao-credito/style.css">
+
+</head>
+<body>
+
+<div class='card'>
+    <p id="cardline">_</p>
+    <p id="cardnumber"></p>
+    <p id="cardname"></p>
+    <div id="cardvv">        
+        <p id="cardvalid"></p>
+        <p id="cardcvv"></p>
+    </div>
+    
+</div>
+
+<input id="hide" type="button" value="👁" onclick="hidef()">
+<form id="cardform">    
+    <input placeholder="0000 0000 0000 0000" autocomplete="off" class="line-1" maxlength="19" type="text" oninput="line1f()" ><br>
+    <input placeholder="Your name" class="line-2" autocomplete="off" maxlength="25" type="text" oninput="line2f()" oninput="line2f()"/><br>
+    <input placeholder="VALID THRU" class="line-3" autocomplete="off" maxlength="7" type="text" oninput="line3f()"/><br>
+    <input placeholder="CVV" class="line-4" autocomplete="off" type="text" maxlength="3" oninput="line4f()"/><br>
+</form>
+
+<input id="send" type="button" value="Send" onclick="sending()">
+
+<script src="/MyProjectsAllan/REAL-TASKS/Cartao-credito/script.js"></script>
+
+</body>
+</html>

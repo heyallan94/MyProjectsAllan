@@ -58,6 +58,7 @@ body{
     height: 1.5em;
     font-size: xx-large;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #cardform{

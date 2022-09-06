@@ -54,12 +54,7 @@ body{
 
 
 #hide{
-    align-items: center;
-    text-align: center;
-    width: .5em;
-    height: .5em;
-    font-size: normal;
-    border-radius: 50%;
+    width: 9em;
     cursor: pointer;
 }
 
@@ -83,6 +78,7 @@ body{
 
 #send{
     width: 9em;
+    cursor: pointer;
     
 }
 
@@ -138,10 +134,8 @@ body{
 
 
     #hide{
-        width: 1.5em;
-        height: 1.5em;
-        font-size: xx-large;
-        border-radius: 50%;
+        width: 9em;
+        cursor: pointer;
     }
 
     #cardform{

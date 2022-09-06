@@ -54,9 +54,11 @@ body{
 
 
 #hide{
-    width: 1.5em;
-    height: 1.5em;
-    font-size: xx-large;
+    align-items: center;
+    text-align: center;
+    width: .5em;
+    height: .5em;
+    font-size: normal;
     border-radius: 50%;
     cursor: pointer;
 }

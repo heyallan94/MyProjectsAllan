@@ -10,6 +10,8 @@ header{
     justify-content: space-between;
     margin-bottom: 2em;
     align-items: center;
+    border-bottom: 1px solid #FFF;
+    
 }
  
 .real-task{
@@ -25,11 +27,14 @@ header a{
     color: white;
     padding: 2em;
     opacity: .5; 
+    cursor: pointer;
 }
 
 header a:hover, p:hover{
     opacity: 1;
 }
+
+
 
 /**/
 
@@ -68,7 +73,6 @@ text-align: center;
 
 main div:hover{
     opacity: 1;
-    cursor: pointer;
 }
 
 main img{
@@ -91,6 +95,7 @@ footer{
 
     header{
         flex-direction: column;
+        border-bottom: 0px;
     }
 
     section{

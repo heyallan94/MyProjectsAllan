@@ -1,4 +1,54 @@
 *{
+        padding: 0;
+        margin: 0;
+        background-image: url(/MyProjectsAllan/LANDING-PAGE-4-Paiva/background.jpg);
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        justify-content: center;
+        background-color: black;
+    }
+    
+    section h1{
+        font-size: xx-large;
+        margin-bottom: 1em;    
+    }
+    
+    section p{
+        max-width: 95%;
+    }
+    
+    nav{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #whatsapp{
+        max-width: 25%;
+    }
+    
+
+@media (max-width: 896px){
+    
+
+*{
     padding: 0;
     margin: 0;
     background-image: url(/MyProjectsAllan/LANDING-PAGE-4-Paiva/background.jpg);
@@ -43,4 +93,4 @@ nav{
 #whatsapp{
     max-width: 25%;
 }
-
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+
+    <!--Aqui começa o Header-->
+
+    <header class="max-width bg" id="Home">
+            <div class="container">
+                <nav class="menu">
+                    <div class="logo"></div>
+                    <div class="desktop-menu">
+                        <ul>
+                            <li><a href="#Contact">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </nav>
+                <div class="call">
+                    <div class="left">
+                        <h1 class="color-azul text-gd">Ay Moda Praia</h1>
+                        <p class="color-azul text-pq">Olá, seja bem-vindo(a)!<br><br>
+                            A areia pode escovar, o sal pode limpar, os bronzeados 
+                            podem desaparecer, mas as memórias durarão para sempre!
+                        </p>
+                        <button id="whats" onclick="whats()">Whatsapp</button>                              
+                       
+                        <p class="color-azul text-pq">
+                            Para pedidos, use
+                            nosso Whatsapp.
+                            <br><br>
+                            Fazemos delivery e entregas em excursão!
+                            <br><br>
+                            Você está comprando direto da fábrica.
+                            <br><br>
+                            Não garantimos cores/estampas.
+                            <br><br>
+                            Seg-Sex 10:00 - 17:00
+                            <br><br>
+                            Os modelos são trocados semanalmente!
+                            
+                        </p>
+                    </div>
+
+                    <h2 class="text-md color-cinza-1"></h2>
+                    <div class="line">
+                        <div class="text-titulo">Bíquinis</div>                        
+                        <div id="itemsy-wrapper">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF13.jpg">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF21.jpg">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF32.jpg">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF23.jpg">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF69.jpg">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF12.jpg">
+                            <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF33.jpg">
+                        </div>
+
+                        <h2 class="text-md color-cinza-1"></h2>
+                        <div class="line">
+                            <div class="text-titulo">Maiôs</div>                        
+                            <div id="itemsy-wrapper">
+                                <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF06.jpg">
+                                <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/Ref43.jpeg">
+                                <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF31.jpg">
+                                <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF98.jpg">
+                                <img class="itemsyimg" src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/REF99.jpg">
+                            </div>                        
+                    
+                    <div class="right">
+                        <div class="imagem">
+                            <img src="/MyProjectsAllan/LANDING-PAGE-5-Ay/img/Ref43.jpeg" alt="">
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <button id="back-to-top">^</button>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        
+        let whatsapp = document.getElementById('whats')
+        
+        // Menu-Mobile
+
+       function whats() {
+        window.open('https://api.whatsapp.com/send?phone=5581995032535')
+       }
+    </script>
+</body>
+</html>

@@ -18,9 +18,9 @@ let n0 = document.getElementById('n0')
 
 
 let historic = []
+let calc = 0
 let myNumber1 = 0
 let myNumber2 = 0
-let myResult = myNumber1 + myNumber2
 
 function addNumber(n){
     n = n.toString()
@@ -29,9 +29,75 @@ function addNumber(n){
 }
 
 function clearInput(){
+    calc = 0
+    myNumber1 = 0
+    myNumber2 = 0
     input.value = ''
+    divideButton.style.opacity = 1
+    multiButton.style.opacity = 1
+    plusButton.style.opacity = 1
+    minusButton.style.opacity = 1
+    resultButton.style.backgroundColor = 'white'
+}
+
+function result(){
+    myNumber2 = Number(input.value)
+    divideButton.style.opacity = 1
+    multiButton.style.opacity = 1
+    plusButton.style.opacity = 1
+    minusButton.style.opacity = 1
+    resultButton.style.backgroundColor = 'white'    
+    if(calc === 0){
+        input.value = myNumber1 + myNumber2
+    }else if(calc === 1){
+        input.value = myNumber1 / myNumber2
+    }else if(calc === 2){
+        input.value = myNumber1 * myNumber2
+    }else if(calc === 3){
+        input.value = myNumber1 - myNumber2
+    }
+}
+
+function plus(){
+    myNumber1 = Number(input.value)
+    calc = 0
+    input.value = ''
+    divideButton.style.opacity = 0.2
+    multiButton.style.opacity = 0.2
+    plusButton.style.opacity = 0.2
+    minusButton.style.opacity = 0.2
+    resultButton.style.backgroundColor = 'yellow'
 }
 
 function divide(){
-    console.log(myNumber)
+    myNumber1 = Number(input.value)
+    calc = 1
+    input.value = ''
+    divideButton.style.opacity = 0.2
+    multiButton.style.opacity = 0.2
+    plusButton.style.opacity = 0.2
+    minusButton.style.opacity = 0.2
+    resultButton.style.backgroundColor = 'yellow'
+}
+
+function multi(){
+    myNumber1 = Number(input.value)
+    calc = 2
+    input.value = ''
+    divideButton.style.opacity = 0.2
+    multiButton.style.opacity = 0.2
+    plusButton.style.opacity = 0.2
+    minusButton.style.opacity = 0.2
+    resultButton.style.backgroundColor = 'yellow'
+}
+
+function minus(){
+    myNumber1 = Number(input.value)
+    calc = 3
+    input.value = ''
+    divideButton.style.opacity = 0.2
+    multiButton.style.opacity = 0.2
+    plusButton.style.opacity = 0.2
+    minusButton.style.opacity = 0.2
+    resultButton.style.backgroundColor = 'yellow'
 }

@@ -1,0 +1,191 @@
+Exercicio para criação de uma calculadora. Ele me ajudou MUITO a desenvolver o DOM, algumas coisas de css, a lógica aritmética, escopo com DOM
+Utilização correta de id e class.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Super Calculador</title>
+</head>
+
+    <style>
+
+        body{background-color: beige;}
+        
+        .calculadora{
+            border-radius: 90px;
+            font: normal 15pt Arial;
+            background-color: green;
+            text-align: center;
+            width: 450px;
+            margin-top: 50px;
+            margin-left: 300px;
+            padding: 10px;
+            box-shadow: 4px 5px 4px rgb(0, 0, 0);
+        }
+            .calculadora-titulo{
+                color: white;            
+            }
+                .calculadora-minititulo{
+                    color: rgba(255, 255, 255, 0.562);
+                }
+                    .calculadora-input-1{
+                        width: 100px; 
+                        text-align: center;
+                    }
+                        .calculadora-input-1:hover{
+                            border-radius: 150px;
+                            box-shadow: 0px 0px 5px black;
+                        }
+                        .calculadora-input-2{
+                            width: 100px;
+                            text-align: center;
+                        }
+                        .calculadora-input-2:hover{
+                            border-radius: 150px;
+                            box-shadow: 0px 0px 5px black;
+                        }
+                        .calculadora-input-3{
+                            width: 100px;
+                            text-align: center;
+                        }
+                            .calculadora-input-3:hover{
+                                border-radius: 150px;
+                                box-shadow: 0px 0px 5px black;
+                            }
+        .calculadora-linha{
+            font-size: 0.15px;
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 210px;
+            border-radius: 100px;
+            background-color: wheat;
+            color: wheat;
+        }
+             .calculadora-linha:hover{
+                background-color: white;
+                color: black;
+                font-size: 15px;
+                width: 300px;
+                margin-left: 65px;
+            }        
+        .calculadora-operadores{
+            display: flex;
+            flex-direction: row;
+            background: green;
+            align-content: space-around;
+            gap: 10px;
+            margin-left: 100px;
+        }
+
+        #soma{
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25pt;
+            border-radius: 50px;
+        }
+              #soma:hover{
+                box-shadow: 0px 0px 15px black;
+                cursor: pointer;
+            }
+        #menos{
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25pt;
+            border-radius: 50px;
+        }
+              #menos:hover{
+                box-shadow: 0px 0px 15px black;
+                cursor: pointer;}
+
+        #multiplicar{
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25pt;
+            border-radius: 50px;
+        }
+              #multiplicar:hover{
+                box-shadow: 0px 0px 15px black;
+                cursor: pointer;
+            }                
+        #divisao{
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25pt;
+            border-radius: 50px;
+        }
+              #divisao:hover{
+                box-shadow: 0px 0px 15px black;
+                cursor: pointer;
+            }       
+    </style>
+
+<body>     
+    <div class="calculadora">
+        <h1 class="calculadora-titulo"> CALCULADORA</h1>
+        <h4 class="calculadora-minititulo"> Digite 3 números</h4>
+        <input class="calculadora-input-1" type="number">
+        <input class="calculadora-input-2" type="number">
+        <input class="calculadora-input-3" type="number">
+        <p class="calculadora-linha"> Após digitar, selecione a operação</p>        
+        <div class="calculadora-operadores">
+            <p id="soma" onclick="soma()">+</p>
+            <p id="menos" onclick="menos()">-</p>
+            <p id="multiplicar" onclick="multiplicar()">*</p>
+            <p id="divisao" onclick="divisao()">/</p>
+        </div>        
+        <p class="calculadora-resultado">Resultado</p>
+    </div>
+
+<script>
+    let i1 = document.getElementsByClassName('calculadora-input-1')[0]
+    let i2 = document.getElementsByClassName('calculadora-input-2')[0]
+    let i3 = document.getElementsByClassName('calculadora-input-3')[0]
+    let r =  document.getElementsByClassName('calculadora-resultado')[0]
+        function soma(){
+            let n1 = Number(i1.value)
+            let n2 = Number(i2.value)
+            let n3 = Number(i3.value)
+            let soma = n1 + n2 + n3
+            r.innerText = soma
+        }
+        function menos(){
+            let n1 = Number(i1.value)
+            let n2 = Number(i2.value)
+            let n3 = Number(i3.value)
+            let soma = n1 - n2 - n3
+            r.innerText = soma
+        }
+        function multiplicar(){
+            let n1 = Number(i1.value)
+            let n2 = Number(i2.value)
+            let n3 = Number(i3.value)
+            let soma = n1 * n2 * n3
+            r.innerText = soma
+        }
+        function divisao(){
+            let n1 = Number(i1.value)
+            let n2 = Number(i2.value)
+            let n3 = Number(i3.value)
+            let soma = n1 / n2 / n3
+        r.innerText = soma
+        }
+    </script>
+
+</body>
+</html>

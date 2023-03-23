@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<main id="form">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome"><br>
+
+		<label for="idade">Idade:</label>
+		<input type="number" min=0 id="idade" name="idade"><br>
+
+		<label for="cidade">Cidade:</label>
+		<input type="text" id="cidade" name="cidade"><br>
+
+		<label for="cargo">Cargo:</label>
+		<input type="text" id="cargo" name="cargo"><br>
+
+		<label for="salario">Salário:</label>
+		<input type="number"  min=0 id="salario" name="salario"><br>
+
+		<button type="submit" onclick="save()">Salvar</button>
+        
+        <section id="resume">
+
+            <div id="employee">Número de funcionários: 0      
+            </div> 
+
+            <div id="wage-cost">Gasto salarial total: 0,00R$
+            </div> 
+
+            <div id="wage-cost-person">Gasto por pessoa: 0,00R$
+            </div> 
+
+        </section>
+	</main>
+
+	<section id="historic">
+
+    <!--    <div style="white-space: pre-line" class="card">Nome : 
+            Idade : 
+            Cidade : 
+            Cargo :
+            Sálario :
+        </div>-->
+
+    </section>
+</body>
+</html>

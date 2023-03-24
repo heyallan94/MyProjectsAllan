@@ -11,7 +11,7 @@ são para problemas reais.)</p>
 Comecei a estudar pra valer Programação, sem saber absolutamente nada.
 
 • Outubro 2022 
-Já fiz alguns projetos e estou focando mais em lógica
+Já fiz alguns projetos e estou focando mais em lógica 
 
 • Novembro 2022 
 Onde trabalho fica bem difícil estudar e praticar programação na parte do verão...

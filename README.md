@@ -2,25 +2,28 @@
 Branch para hospedagem de projetos criados para exercitar :)
 
 <div>
-      <a href="https://heyallan94.github.io/MyProjectsAllan/LANDING-PAGE-0-AS-Invest/index.html">AS INVEST</a>
-        <p>Meu primeiro código juntando HTML e CSS. Não havia aprendido nada de JS ainda...<br>
-         Página para uma fictícia discussão financeira de alguma empresa, tal empresa poderia<br>
-         Buscar uma rentabilidade com um gestor financeiro</p>
-      <a href="https://heyallan94.github.io/MyProjectsAllan/LANDING-PAGE-1-Futebol/index.html">AS FUTEBOL</a>
-        <p>Meu primeiro quase site responsivo, demorei umas 9 horas para elaborar<br>
-         Foi de MUITO aprendizado tentar fazer responsividade!</p>
-      <a href="https://heyallan94.github.io/MyProjectsAllan/LANDING-PAGE-3-EI/index.html">Escola Finaceira</a>
-        <p>Amigo meu, pediu para fazer este site como landing page para sua empresa<br>
-         (09/07/2022) Ainda não está pronto a landing page!</p>
-      <a href="https://heyallan94.github.io/MyProjectsAllan/CARRINHO-COMPRA-01/index.html">Carrinho de Compra</a>
-        <p>Carrinho de compras usando a tríade (HTML, JS , CSS) para tentar fazer uma página<br>
-         de carrinho de compras. Porém neste caso, ainda não tinha aprendido como fazer request><br>
-         com o back, não sabia oque era API, JSON, fetch, GET etc. etc.. Mas esse pequeno<br>
-         desafio serviu de base para procurar aprofundar nisso...</p>
-      <a href="https://heyallan94.github.io/MyProjectsAllan/API-001-RICK-MORTY/index.html">API RICK MORTY</a>
-        <p>Hoje dia 27/08/2022, após ter estudando um pouco sobre fetch api, aprendi sobre await, then e async
-         Sei que estou bem no começo e o aprendizado é grande, cada dia que passa aprendo coisas novas e 
-         utilidades para elas.
-         O fetch é extremamente útil e importante e também muito legal de usar.
-        </p>
-    </div>
+<a href="https://heyallan94.github.io/MyProjectsAllan/index.html">Meus projetos</a>
+<p>Olá! Aqui está salvo alguns projetos para fixar o conhecimento em programação.
+(Se você for um recrutador, por favor avalie os itens que estão pintados de ROXO, eles
+são para problemas reais.)</p>
+<p>
+Setembro 2022
+Comecei a estudar pra valer Programação, sem saber absolutamente nada.
+
+Outubro 2022
+Já fiz alguns projetos e estou focando mais em lógica
+
+Novembro 2022 
+Onde trabalho fica bem difícil estudar e praticar programação na parte do verão...
+
+Fevereiro 2023
+Voltei! Focado em estudar pelo menos 2horas por dia e fazer projetos novos! 
+Também comecei a fazer novos cursos de Javascript médio para avançado.
+
+Março 2023
+Comecei a dá commit nos meus novos projetos, e aprendendo muito.
+Estou finalizando o curso de Javascript. Iniciando cursos de CSS e React.
+Pretendo aprender React Native também
+</p>
+
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="meuForm" id="hidden">
+
+        <div id="resultado">Olá!</div>
+
+        <div id="inputs">
+            <label for="nome">Nome de usuário:</label>
+            <input type="text" id="nome" name="nome">  
+            <br>  
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+        </div>
+
+  
+        <br>
+  
+        <input type="button" id="loginButton" onclick="login(event)" value="Entrar">
+
+        <br>
+        <input id="logoutButton" onclick="logout(event)" type="button" value="Sair">
+      </form>
+</body>
+</html>

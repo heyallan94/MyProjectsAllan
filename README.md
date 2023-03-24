@@ -4,7 +4,7 @@ Branch para hospedagem de projetos criados para exercitar :)
 <div>
 <a href="https://heyallan94.github.io/MyProjectsAllan/index.html">Meus projetos</a>
 <p>Olá! Aqui está salvo alguns projetos para fixar o conhecimento em programação.
-(Se você for um recrutador, por favor avalie os itens que estão pintados de ROXO, eles
+(Se você for um recrutador, por favor avalie os itens que estão pintados de VERDE, eles
 são para problemas reais.)</p>
 <p>
 • Setembro 2022 

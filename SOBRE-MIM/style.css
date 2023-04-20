@@ -1,0 +1,12 @@
+body{
+    background: linear-gradient(to top, rgb(126, 126, 187) 0%, #f7f7f7 100%);
+    color: #f7f7f7;
+
+}
+
+
+.profile{
+    border-radius: 100%;
+    max-width: 200px;
+    border: 1px solid black;
+}

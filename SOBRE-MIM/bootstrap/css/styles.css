@@ -247,7 +247,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #080820;
   text-decoration: underline;
 }
 a:hover {
@@ -8037,7 +8037,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #080820
 }
 
 .text-secondary {
@@ -8128,7 +8128,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #080820
 }
 
 .bg-secondary {
@@ -10969,4 +10969,60 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+@media (max-width: 990px) { /*Aparece celular*/
+
+
+  #imgCell{    
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  }
+
+  #nameCell{
+    display: none;
+  }
+
+  #nameH1Cell{
+    display: none;
+  }
+
+  #addressH1Cell{
+    margin-top: 45px;
+  }
+
+  .needLines{
+    border-bottom: 1px solid gray;
+  }
+
+  #skills{
+    margin-top: -15px;
+  }
+  
+  .needTop{
+    margin-top: -100px;
+  }
+  
+  .needTopEdu{
+    margin-top: -100px;
+  }
+
+  .needTopMetas{
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 990px) {
+  #imgCell{
+    display: none;
+  };
+
+  section{
+    background-color: red;
+  }
+
 }

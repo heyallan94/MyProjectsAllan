@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.0.0"
+  },
+  "name": "mymovies",
+  "version": "1.0.0",
+  "description": "An app that I can note movies to watch, so I don't forget",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "linkedin",
+    "url": "https://www.linkedin.com/in/allan-santos-400440238/"
+  },
+  "author": "Allan Santos (heyallan22@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pokemon-cards",
+  "version": "1.0.0",
+  "description": "\"Uma aplicação que mostra cards de pokemon\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Allan Santos (heyallan22@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "autocomplete.js": "^0.38.1",
+    "jquery": "^3.7.0",
+    "typeahead.js": "^0.11.1"
+  }
+}

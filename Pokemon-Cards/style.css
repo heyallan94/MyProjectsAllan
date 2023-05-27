@@ -1,0 +1,125 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    justify-content: center;
+    gap: 5em;
+    padding: 1em;
+}
+
+.resultPanel{
+    margin-top: 6.6em;
+    background-color: rgb(148, 140, 140);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.resultPanel button{
+    margin-top: .5em;
+}
+
+.resultPanel input{
+    height: 2em;
+    width: 20em;
+    text-align: center;
+}
+
+.resultPanel button:hover, input:hover {
+    cursor: pointer;
+}
+
+/*
+                                                                                CARD                                                                        
+*/
+
+.hide{
+  display: none;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(133, 85, 40);
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  
+  .card-details {
+    border-radius: 5%;
+    background-color: rgb(223, 216, 216);
+    padding: 5px;
+  }
+  
+  .card-name {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  .card-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+  }
+  
+  .label {
+    margin-right: 5px;
+  }
+  
+  .value {
+    font-weight: bold;
+  }
+
+  #xClose{
+    position: absolute;
+    margin-left: 13.7em;
+    margin-top: -0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.5em;
+    background-color: yellow;
+  }
+
+  #xClose:hover{
+    background-color: rgb(170, 77, 77);
+    padding: 0.6em;
+    margin-left: 13.6em;
+  }
+
+  #vClose{
+    position: absolute;
+    margin-left: 13.7em;
+    margin-top: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.5em;
+    background-color: yellow;
+  }
+
+  #vClose:hover{
+    background-color: rgb(77, 170, 93);
+    padding: 0.6em;
+    margin-left: 13.6em;
+  }
+
+  /*                                                    MAIN                                                */
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 1em;
+  }

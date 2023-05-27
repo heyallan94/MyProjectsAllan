@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon AS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="resultPanel">
+            <h2>Monte o seu baralho</h2>
+            <input type="text" placeholder="Digite o nome do Pokemon" id="inputName">
+            <button onclick="adicionarCardMenu()">Adicionar</button>
+            <p>Resultado</p>
+        </div>
+
+        <div id="cardMenu" class="card hide">
+            <button id="xClose">X</button>
+            <button onclick="vClose()" id="vClose">V</button>
+            <img id="imgCard" src="/img/White.jpg" alt="Card Image">
+            <div class="card-details">
+              <h2 class="card-name">Nome do Card</h2>
+              <div class="card-stats">
+                <div class="stat">
+                  <span class="label">ATK:</span>
+                  <span class="value">2000</span>
+                </div>
+                <div class="stat">
+                  <span class="label">DEF:</span>
+                  <span class="value">1500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </header>
+    <main>
+
+      <!--<div class="card">
+        <button id="xClose">X</button>
+        <button onclick="vClose()" id="vClose">V</button>
+        <img id="imgCard" src="/img/White.jpg" alt="Card Image">
+        <div class="card-details">
+          <h2 class="card-name">Nome do Card</h2>
+          <div class="card-stats">
+            <div class="stat">
+              <span class="label">ATK:</span>
+              <span class="value">2000</span>
+            </div>
+            <div class="stat">
+              <span class="label">DEF:</span>
+              <span class="value">1500</span>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

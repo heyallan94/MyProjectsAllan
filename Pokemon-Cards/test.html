@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <div class="card">
+          <img src="" alt="Card Image">
+          <div class="card-details">
+            <h2 class="card-name">Nome do Card</h2>
+            <div class="card-stats">
+              <div class="stat">
+                <span class="label">ATAQUE:</span>
+                <span class="value">2000</span>
+              </div>
+              <div class="stat">
+                <span class="label">DEFESA:</span>
+                <span class="value">1500</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    
+      <style>
+        .card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-details {
+  margin-top: 10px;
+}
+
+.card-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-right: 5px;
+}
+
+.value {
+  font-weight: bold;
+}
+      </style>
+</html>

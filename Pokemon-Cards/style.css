@@ -41,10 +41,10 @@ header{
 
 .card {
     width: 200px;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     padding: 10px;
     text-align: center;
-    background-color: rgb(133, 85, 40);
+    background-color: rgb(255, 255, 255);
   }
   
   .card img {
@@ -52,6 +52,7 @@ header{
     max-height: 200px;
     object-fit: cover;
     border-radius: 5%;
+    margin-bottom: 1em;
   }
   
   .card-details {
